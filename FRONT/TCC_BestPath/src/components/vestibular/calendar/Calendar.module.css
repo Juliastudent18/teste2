@@ -1,0 +1,24 @@
+.calendarTitle{
+    background-color: #FFF;
+    width: auto;
+    height: auto;
+    padding-bottom: 10px;
+
+    font-family: "Montserrat";
+    color: #000056;
+    font-weight: 600;
+    text-align: center;
+}
+
+.calendarInfo {
+    background-color: #F6CB6C;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    margin: 15px 0px 15px 0px;
+    padding: 15px;
+
+    font-family: "Montserrat";
+    color: #000056;
+    font-weight: 600;
+}

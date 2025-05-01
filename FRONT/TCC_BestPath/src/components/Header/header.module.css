@@ -1,0 +1,33 @@
+.header {
+    background: linear-gradient(to right, #F59817, #5B58DD);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    padding: 0.15rem;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header .user {
+    width: auto;
+    height: 50px;
+    margin-right: 0.10rem;
+    margin-top: 0.2rem;
+    padding-inline: 1rem;
+}
+
+.header .menu {
+    width: auto;
+    height: 40px;
+    padding-inline: 0;
+
+}
+
+.header img {
+    width: 115px;
+    height: auto;
+    margin-left: 0.40rem;
+}

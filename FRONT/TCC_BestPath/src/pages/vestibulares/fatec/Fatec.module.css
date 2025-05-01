@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    margin: 100px;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.linksAndAbout {
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar {
+    background-color: #FFF;
+    width: auto;
+    height: auto;
+    border: solid 2px #000056;
+    border-radius: 15px;
+    padding: 30px 30px 15px 30px;
+}

@@ -1,0 +1,62 @@
+.aboutContainer{
+    width: auto;
+    height: auto;
+    background-color: #FFF;
+
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: #000056;
+    
+    padding: 5px 30px 15px 30px;
+    margin: 30px 0px 30px 0px;
+
+    text-align: center;
+    justify-items: center;
+}
+
+.contentDiv{
+    background-color: #F6CB6C;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.contentDiv p{
+    padding: 15px;
+    width: auto;
+    text-align: justify;
+}
+
+.favorite{
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 5vw;    
+
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.favorite button{
+    background-color: transparent;
+
+    border: solid 2px #F6CB6C;
+    border-radius: 15px;
+    height: auto;
+
+    padding: 10px 15px 10px 10px;
+
+    text-align: center;
+
+    color: #000056;
+    font-weight: 600;
+}
+
+.favorite button:hover {
+    transition-duration: 0.4s;
+    background-color: #000056;
+    border-color: #000056;
+    color: #FFF;
+}

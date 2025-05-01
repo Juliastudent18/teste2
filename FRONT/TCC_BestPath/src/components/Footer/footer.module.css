@@ -1,0 +1,14 @@
+.footer {
+    background: linear-gradient(to right, #F59817, #5B58DD);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer h2 {
+    font-size: 12px;
+    color: #FFFFFF;
+}

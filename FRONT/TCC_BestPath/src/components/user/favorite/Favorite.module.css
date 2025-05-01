@@ -1,0 +1,14 @@
+.vestibular{
+    background-color: #FFF;
+    width: 180px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 5px 0px 0px 5px;
+    align-items: center;
+
+    font-family: "Montserrat";
+    color: #000056;
+    font-weight: 600;
+    text-decoration: none;
+}

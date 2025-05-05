@@ -23,6 +23,13 @@ function User() {
   ];
 
   useEffect(() => {
+    // Carrega a imagem de perfil salva no localStorage
+    const imagemSalva = localStorage.getItem("imagemPerfil");
+    if (imagemSalva) {
+      setFotoSelecionada(imagemSalva);
+    }
+
+    // Busca as notícias
     const fetchNoticias = async () => {
       try {
         const response = await fetch("http://localhost:2024/noticias");
@@ -34,6 +41,12 @@ function User() {
     };
     fetchNoticias();
   }, []);
+
+  const handleSelecionarImagem = (img) => {
+    setFotoSelecionada(img);
+    localStorage.setItem("imagemPerfil", img); // Salva no localStorage
+    setMostrarOpcoes(false);
+  };
 
   return (
     <>
@@ -53,7 +66,7 @@ function User() {
                   style={{
                     width: "100%",
                     height: "100%",
-                    borderRadius: "50%", // Garante que a imagem seja redonda
+                    borderRadius: "50%",
                     objectFit: "cover",
                   }}
                 />
@@ -70,11 +83,8 @@ function User() {
                 <img
                   key={index}
                   src={img}
-                  alt={`Opção ${index + 1}`} // Corrigido o template literal aqui
-                  onClick={() => {
-                    setFotoSelecionada(img);
-                    setMostrarOpcoes(false);
-                  }}
+                  alt={`Opção ${index + 1}`}
+                  onClick={() => handleSelecionarImagem(img)}
                   className={styles.opcaoImagem}
                 />
               ))}
